@@ -11,7 +11,7 @@ def get_paths(input_dir, exts=None):
 
     return paths
 
-input_dir = Path(r"D:\★かのい\APEX\Outplayed\Apex Legends")
+input_dir = Path(r"D:\kanoi\APEX\Outplayed\Apex Legends")
 
 output_dir = Path(r"output")
 output_dir.mkdir(exist_ok=True)
@@ -24,5 +24,5 @@ for path in get_paths(input_dir, exts=[".mp4"]):
     print(video_len_sec)
     cap.release()
     if video_len_sec <= 300:
-        shutil.move(str(path), "D:\★かのい\APEX\APEX\ゴミ箱")
+        shutil.move(str(path), "D:\kanoi\APEX\dustbox")
     
