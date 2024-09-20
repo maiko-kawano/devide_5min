@@ -24,5 +24,5 @@ for path in get_paths(input_dir, exts=[".mp4"]):
     print(video_len_sec)
     cap.release()
     if video_len_sec <= 300:
-        shutil.move(str(path), "D:\kanoi\APEX\dustbox")
+        shutil.move(str(path), r"D:\kanoi\APEX\dustbox")
     
